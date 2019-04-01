@@ -4,7 +4,7 @@ int main()
 {
    int n;
    scanf("%d",&n);
-   int i,j,len=0,a[80],t=0;
+   int i,j,len=0,a[80],t=0,c=0;
    for(i=0;i<n;i++)
    {
       scanf("%d",&a[i]); 
@@ -30,9 +30,13 @@ int main()
                printf("%d",a[i]);
                a[i]='$';
                a[j]='$';
+               c++;
            }
        }
    }
-
+   if(c=0)
+   {
+       printf("unique");
+   }
     return 0;
 }
