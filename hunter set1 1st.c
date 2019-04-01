@@ -34,7 +34,7 @@ int main()
            }
        }
    }
-   if(c=0)
+   if(c==0)
    {
        printf("unique");
    }
